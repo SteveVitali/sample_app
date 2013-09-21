@@ -33,7 +33,7 @@ group :production do
 end
 
 #Trying to get bootstrap to work on heroku
-gem 'bootstrap_helper'
+# gem 'bootstrap_helper'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
