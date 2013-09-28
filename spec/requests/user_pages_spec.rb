@@ -20,7 +20,7 @@ describe "UserPages" do
 	end
 
 	describe "signup" do
-		before {visit signup_path }
+		before { visit signup_path }
 
 		let(:submit) { "Create my account" }
 
@@ -40,6 +40,10 @@ describe "UserPages" do
 
 			it "should create a user" do
 				expect { click_button submit }.to change(User, :count).by(1)
+			end
+
+			describe "after saving the user" do
+				it { should have_link('Sign out') }
 			end
 		end
 	end
