@@ -10,7 +10,12 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+//Note: to get stuff right in heroku, move bootstrap down below below jquery_ujs,
+//		then precompile on heroku with 
+//		https://devcenter.heroku.com/articles/rails-asset-pipeline
+//		Then re-upload everything to git and heroku and put it back to normal locally.
+//
+//= require bootstrap
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
 //= require_tree .
